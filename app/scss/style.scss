@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -117,6 +118,105 @@
     }
 }
 
+.top-slider {
+    margin: 0 auto;
+    max-width: 1770px;
+    background-color: #fcd7b6;
+    position: relative;
+    background-image: url(../images/slider-bg.png);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: 84%;
+
+    &__content {
+        padding-top: 211px;
+        padding-bottom: 293px;
+
+    }
+
+
+    &__item {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 300px;
+
+    }
+
+    &__title {
+        max-width: 470px;
+        font-size: 72px;
+        line-height: 70px;
+        @extend %rubik-500;
+        color: #243f4d;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        max-width: 370px;
+        @extend %rubik-400;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 53px;
+        color: #436372;
+    }
+
+    &__link {
+        background-color: #a3bbc8;
+        @extend %rubik-500;
+        font-size: 15px;
+        line-height: 10px;
+        color: #ffffff;
+        padding: 24px 18px 22px 26px;
+
+
+        &:after {
+            content: url(../images/arrow-btn.png);
+            padding-left: 60px;
+
+        }
+
+        &__images {
+            padding-top: 20px;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 50%;
+        bottom:5%;
+        transform: translateX(-50%);
+
+        li { padding: 0 6px;
+            button {
+                border: none;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                font-size: 11px;
+                @extend %rubik-500;
+                color: #243f4d;
+                background-color: #fde3cc;
+            }
+
+            &.slick-active {
+                button{
+                background-color: #fff;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+
+
 .footer-top {
     padding: 78px 0 57px;
     display: flex;
@@ -197,6 +297,7 @@
         max-width: 100px;
         border: none;
         padding: 11px 15px;
+        margin-left: -4px;
         @extend %dmsans-400;
         font-size: 14px;
         color: #ffffff;
