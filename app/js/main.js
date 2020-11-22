@@ -2,7 +2,7 @@ $(function (){
     $('.top-slider__inner').slick({
        dots:true,
        arrows:false,
-       autoplay:trueg
+       autoplay:true
     
       });
 });

@@ -7,7 +7,9 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.5;
+
+
 }
 
 main {
@@ -15,8 +17,13 @@ main {
 }
 
 .container {
-    max-width: 1230px;
-    padding: 0 30px;
+    max-width: 1200px;
+    padding: 0 15px;
     margin: 0 auto;
 
+    &--big-size {
+        max-width: 1800px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
 }

@@ -36,10 +36,6 @@ html {
     list-style: none;
   }
   
-  a[class] {
-    text-decoration: none;
-  }
-  
   img {
     max-width: 100%;
     display: block;
@@ -54,4 +50,9 @@ html {
 
   a {
     text-decoration: none;
+    color: inherit;
+  }
+
+  address {
+    font-style: inherit;
   }
