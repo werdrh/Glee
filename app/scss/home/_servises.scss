@@ -11,20 +11,17 @@
     &__items {
         display: flex;
         padding: 45px 145px 40px;
-        
+
 
         &:not(:last-child) {
-            border-right: 1px solid #e8e4df ;
+            border-right: 1px solid #e8e4df;
         }
-        
-    }
 
+    }
 
 
     &__item {
         max-width: 225px;
-        
-        
     }
 
 
@@ -34,16 +31,16 @@
         fill: #a3bbc8;
     }
 
-
-
     &__title {
         @extend %dmsans-700;
         font-size: 18px;
         color: #414141;
         line-height: 1.4;
         margin-bottom: 5px;
+        &:hover {
+            color: $hover;
+        }
     }
-
 
 
     &__text {
