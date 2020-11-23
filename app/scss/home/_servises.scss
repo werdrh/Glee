@@ -1,0 +1,55 @@
+.servises {
+
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        background-color: #fef7f0;
+    }
+
+    &__items {
+        display: flex;
+        padding: 45px 145px 40px;
+        
+
+        &:not(:last-child) {
+            border-right: 1px solid #e8e4df ;
+        }
+        
+    }
+
+
+
+    &__item {
+        max-width: 225px;
+        
+        
+    }
+
+
+
+    &__img {
+        margin-right: 21px;
+        fill: #a3bbc8;
+    }
+
+
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 18px;
+        color: #414141;
+        line-height: 1.4;
+        margin-bottom: 5px;
+    }
+
+
+
+    &__text {
+        @extend %dmsans-400;
+        font-size: 16px;
+        line-height: 2;
+        color: #585858;
+    }
+}
