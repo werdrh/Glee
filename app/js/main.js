@@ -5,4 +5,7 @@ $(function (){
        autoplay:true
     
       });
+      var mixer = mixitup('.products__items', {
+        
+    });
 });

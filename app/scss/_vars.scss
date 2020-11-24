@@ -26,3 +26,12 @@ $footer:#7b7b7b;
     font-family: 'Rubik-Medium', sans-serif;
     font-weight: 500;
 }
+
+%title {
+    text-align: center;
+    @extend%dmsans-700;
+    font-size: 36px;
+    color: #191919;
+    
+}
+

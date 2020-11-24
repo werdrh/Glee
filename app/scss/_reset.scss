@@ -48,11 +48,17 @@ html {
     font: inherit;
   }
 
-  a {
+  a,
+  button {
     text-decoration: none;
     color: inherit;
   }
 
   address {
     font-style: inherit;
+  }
+
+  button {
+    border: none;
+    background-color: inherit;
   }
