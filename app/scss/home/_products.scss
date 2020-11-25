@@ -17,6 +17,7 @@
         &+& {
             margin-left: 19px;
         }
+
         &:hover {
             color: #191919;
         }
@@ -30,24 +31,26 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 40px 30px;
+        margin-bottom: 180px;
     }
 
-    &__item {      
+    &__item {
         max-width: 270px;
-        height: 380px;        
+        height: 380px;
         text-align: center;
         box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
         position: relative;
         padding-bottom: 37px;
         overflow: hidden;
-        display:flex;
+        display: flex;
         flex-direction: column;
-        
-       
+
+
+
 
         &:hover {
-            .products__item-nav{
-            transform: translateY(0%);
+            .products__item-nav {
+                transform: translateY(0%);
             }
         }
 
@@ -55,17 +58,10 @@
 
     }
 
-    &__img {        
+    &__img {
         display: inline;
         margin: auto;
         padding: 0px 0 25px;
-        
-        
-        
-      
-        
-        
-        
     }
 
     &__name {
@@ -87,7 +83,7 @@
         left: 17%;
         transform: translateY(500%);
         transition: all .3s;
-        
+
     }
 
     &__links {
@@ -110,4 +106,74 @@
         }
 
     }
+
+    &__bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       grid-gap: 30px;
+
+    }
+
+    &__bottom-items {
+        display: flex;
+        position: relative;
+
+    }
+
+    &__bottom-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 102px 129px 95px 387px;
+        background-color: #feefe2;
+        color: #243f4d;
+       
+        
+
+    }
+
+    &__bottom-img {
+        position: absolute;
+        bottom: 80px;
+        left: 130px;
+
+    }
+
+    &__bottom-title {
+        max-width: 270px;
+        font-size: 26px;
+        @extend %dmsans-700;
+        line-height: 1.2;
+        
+    }
+
+    &__bottom-text {
+        max-width: 350px;
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 16px;
+    }
+
+    &__bottom-link {
+        font-size: 16px;
+        color: #436372;
+        max-width: 180px;
+        border: 1px solid #b3b7b5;
+        border-radius: 5px;
+        padding: 18px 0 18px 23px;
+        transition: all .3s;
+        &::after {
+            content: url(../../images/icon/shape-products.svg);
+            margin-left: 43px;
+        
+        }
+        &:hover {
+            background-color: $hover;
+            color: #fff;
+        }
+    }
+}
+.mixitup-control-active {
+    color: #191919;
 }
