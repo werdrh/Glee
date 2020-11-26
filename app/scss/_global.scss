@@ -8,8 +8,6 @@ body {
     flex-direction: column;
     font-size: 16px;
     line-height: 1.5;
-
-
 }
 
 main {
@@ -20,10 +18,117 @@ main {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
 
-    &--big-size {
-        max-width: 1800px;
-        padding: 0 15px;
-        margin: 0 auto;
+.container-big {   
+    max-width: 1800px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 17px;
+    text-align: center;
+    @extend%dmsans-700;
+    font-size: 36px;
+    color: $title
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    @extend %dmsans-700;
+    color: #8b8b8b;
+    margin-bottom: 75px;
+
+    & + & {
+        margin-left: 19px;
+    }
+
+    &:hover {
+        color: #191919;
+    }
+}
+
+button {
+    outline:none;
+    cursor: pointer;
+}
+
+.product {    
+        text-align: center;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        position: relative;
+        padding: 65px 0 30px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            .product__item-nav {
+                transform: translateY(0%);
+            }
+        }    
+
+    &__img {
+        max-width: 221px;
+        max-height: 174px;
+        height: 100%;
+        margin: auto;
+        margin-bottom: 57px;
+    }
+
+    &__name {
+        margin-bottom: 6px;
+        @extend %dmsans-500;
+        color: #243f4d;
+    }
+
+    &__price {
+        @extend %dmsans-700;
+        color: #a3bbc8;
+    }
+
+    &__item-nav {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 41%;
+        left: 17%;
+        transform: translateY(500%);
+        transition: all .3s;
+    }
+
+    &__nav-img {
+        max-width: 22px;
+        max-height: 20px;
+        fill:#A3BBC8;
+    }
+
+    &__btn{
+        max-width: 44px;
+        max-height: 44px;
+        border-radius: 50%;
+    }
+
+    &__links {
+        width: 44px;
+        height: 44px;
+        line-height: 3.2;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 0 8px;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #a3bbc8;
+            .product__nav-img {
+                fill: #fff;                
+            }
+        }
     }
 }

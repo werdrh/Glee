@@ -1,10 +1,9 @@
-.servises {
-
-
+.services {
 
     &__inner {
         display: flex;
         justify-content: space-around;
+        align-items: center;
         background-color: #fef7f0;
     }
 
@@ -12,21 +11,18 @@
         display: flex;
         padding: 45px 145px 40px;
 
-
         &:not(:last-child) {
             border-right: 1px solid #e8e4df;
         }
-
     }
-
 
     &__item {
         max-width: 225px;
     }
 
-
-
     &__img {
+        max-width: 57px;
+        max-height: 58px;
         margin-right: 21px;
         fill: #a3bbc8;
     }
@@ -37,11 +33,7 @@
         color: #414141;
         line-height: 1.4;
         margin-bottom: 5px;
-        &:hover {
-            color: $hover;
-        }
     }
-
 
     &__text {
         @extend %dmsans-400;

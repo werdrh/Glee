@@ -1,6 +1,7 @@
 $header: #436372;
 $hover: #3da8e2;
 $footer:#7b7b7b;
+$title:#191919;
 
 %dmsans-400 {
     font-family: 'DMSans-Regular', sans-serif;
@@ -27,11 +28,4 @@ $footer:#7b7b7b;
     font-weight: 500;
 }
 
-%title {
-    text-align: center;
-    @extend%dmsans-700;
-    font-size: 36px;
-    color: #191919;
-    
-}
 

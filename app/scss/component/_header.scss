@@ -9,50 +9,39 @@
     }
 }
 
-
 .menu {
     &__list {
         display: flex;
         transform: translateX(15%);
         font-size: 15px;
-       
     }
 
-    &__item{
-        &:not(:first-child){
-        margin-left: 36px;
+    &__item {
+        &:not(:first-child) {
+            margin-left: 36px;
         }
     }
 
     &__link {
         color: $header;
         padding-bottom: 2px;
-        transition: .3s;
+        transition: 0.3s;
         border: none;
 
         &:hover {
             color: $hover;
             border-bottom: 1px solid $hover;
-            
-            
         }
     }
 }
 
 .user-nav {
     display: flex;
+    align-items: center;
 
-    &__link {
-        position: relative;
-        padding: 20px 20px;
-        line-height: 3.7;
-        transition: 0.3s;
-        
-
-        & svg:hover {
-            fill: $hover;          
-
-        }
+    &__img {
+        width: 20px;
+        height: 20px;
     }
 
     &__num {
@@ -62,62 +51,78 @@
         line-height: 1.6;
         width: 16px;
         height: 16px;
-        top: 30px;
-        left: 30px;
+        top: 18px;
+        left: 44px;
         background-color: #fff;
         border-radius: 50%;
         @extend %dmsans-400;
     }
 
+    &__search {
+        background-color: #edf1f4;
+        padding: 19px 19px;
+        max-width: 51px;
+        max-height: 51px;
+        border-radius: 50%;
+        transition: 0.3s;
+        &:hover {
+            background-color: $hover;
+        }
+    }
 
     &__block {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 20px;
-        padding: 36px 24px 18px;
+        margin: 0 20px 0 30px;    
         max-width: 178px;
-        max-height: 51px;
+        max-height: 50px;
+        height: 100%;
         background-color: #fcd7b6;
         border-radius: 25px 25px 25px 25px;
-    }
-
-
-    &__search {
-
-        background-color: #edf1f4;
-        max-width: 51px;
-        max-height: 51px;
-        border-radius: 50%;
+       
     }
 
     &__heard {
-        padding-right: 36px;
-        position: relative;
+       position: relative;        
+        padding: 26px 28px 9px 30px;  
 
         &::after {
             position: absolute;
             content: '|';
-            bottom: 0;
-            left: 63px;
+            bottom: 5px;
+            left: 80px;
             font-size: 32px;
             color: #fde7d3;
         }
+        &:hover {
+            fill:$hover;            
+        }
     }
 
-    &__link-botton {
+    &__shape{
+        padding: 26px 38px 9px 30px;
+        position: relative;
+        &:hover {
+            fill:$hover;            
+        }
+    }
+
+    &__button {
         background-color: #a3bbc8;
         max-width: 51px;
         max-height: 51px;
         border-radius: 50%;
-    }
-
-    &__botton {
         align-items: center;
-        padding: 0 16px 0;
-
+        padding: 16px 16px;
+        transition: 0.3s;
         & svg {
             fill: #fff;
         }
+        &:hover {
+            background-color: $hover;
+        }
     }
+
+   
 }
