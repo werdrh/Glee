@@ -20,7 +20,7 @@ main {
     margin: 0 auto;
 }
 
-.container-big {   
+.container-big {
     max-width: 1800px;
     padding: 0 15px;
     margin: 0 auto;
@@ -44,7 +44,7 @@ main {
     color: #8b8b8b;
     margin-bottom: 75px;
 
-    & + & {
+    &+& {
         margin-left: 19px;
     }
 
@@ -54,25 +54,64 @@ main {
 }
 
 button {
-    outline:none;
+    outline: none;
     cursor: pointer;
 }
 
-.product {    
-        text-align: center;
-        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-        position: relative;
-        padding: 65px 0 30px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        font-size: 16px;
+.top {
+    padding: 17px 0 30px;
+    background-color: #edf1f4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-        &:hover {
-            .product__item-nav {
-                transform: translateY(0%);
-            }
-        }    
+    &__title {
+        font-size: 36px;
+        color: #222933;
+        @extend %rubik-300;
+        text-align: center;
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        font-size: 14px;
+        color: #888c91;
+        @extend %rubik-400;
+        &:not(:last-child)::after {
+            content: "/";
+            padding: 0 6px;
+        }
+    }
+
+    &__item a:hover {
+        color: $hover;
+    }
+}
+
+.product {
+    text-align: center;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    position: relative;
+    padding: 65px 0 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+
+    &:hover {
+        .product__item-nav {
+            transform: translateY(0%);
+        }
+    }
 
     &__img {
         max-width: 221px;
@@ -106,10 +145,10 @@ button {
     &__nav-img {
         max-width: 22px;
         max-height: 20px;
-        fill:#A3BBC8;
+        fill: #A3BBC8;
     }
 
-    &__btn{
+    &__btn {
         max-width: 44px;
         max-height: 44px;
         border-radius: 50%;
@@ -127,8 +166,9 @@ button {
 
         &:hover {
             background-color: #a3bbc8;
+
             .product__nav-img {
-                fill: #fff;                
+                fill: #fff;
             }
         }
     }
