@@ -1,7 +1,6 @@
 .insights {
-    padding: 0 0 85px;
     background: linear-gradient(to bottom, #fff 50%, #fef7f0 50%);
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     &__top {
         display: flex;
@@ -30,6 +29,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
-        margin-bottom: 90px;
+        margin-bottom: 15px;
     }
 }
