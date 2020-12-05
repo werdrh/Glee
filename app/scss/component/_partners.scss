@@ -1,0 +1,13 @@
+.partners{
+&__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+&__item {
+    max-width: 160px;
+    max-height: 110px;
+}
+    
+}

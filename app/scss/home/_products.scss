@@ -1,74 +1,23 @@
 .products {
-    padding: 56px 0 75px;
+    padding: 56px 0 70px;
     font-size: 16px;
 
     &__items {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 40px 30px;
-        margin-bottom: 180px;
-    }    
+        margin: 75px 0 190px;
+    }
+
 
     &__bottom {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-       grid-gap: 30px;
-    }
-
-    &__bottom-items {
-        display: flex;
-        position: relative;
-    }
-
-    &__bottom-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 102px 129px 95px 387px;
-        background-color: #feefe2;
-        color: #243f4d; 
-    }
-
-    &__bottom-img {
-        position: absolute;
-        bottom: 80px;
-        left: 130px;
-    }
-
-    &__bottom-title {
-        max-width: 270px;
-        font-size: 26px;
-        @extend %dmsans-700;
-        line-height: 1.2;        
-    }
-
-    &__bottom-text {
-        max-width: 350px;
-        @extend %rubik-400;
-        font-size: 16px;
-        line-height: 1.8;
-        margin-bottom: 16px;
-    }
-
-    &__bottom-link {
-        font-size: 16px;
-        color: #436372;
-        max-width: 180px;
-        border: 1px solid #b3b7b5;
-        border-radius: 5px;
-        padding: 18px 0 18px 23px;
-        transition: all 0.3s;
-        &::after {
-            content: url(../../images/icon/shape-products.svg);
-            margin-left: 43px;        
-        }
-        &:hover {
-            background-color: $hover;
-            color: #fff;
-        }
+        grid-gap: 30px;
     }
 }
 
-.mixitup-control-active {
+    
+.products__nav-btn.mixitup-control-active {
     color: #191919;
 }

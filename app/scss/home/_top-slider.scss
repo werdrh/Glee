@@ -1,7 +1,7 @@
-.top-slider {  
+.top-slider {
     @extend %rubik-500;
 
-    &__inner{
+    &__inner {
         background-color: #fcd7b6;
         position: relative;
         background-image: url(../images/slider-bg.png);
@@ -24,7 +24,10 @@
     }
 
     &__title {
+        display: block;
         max-width: 470px;
+        max-height: 400px;
+        overflow: hidden;
         font-size: 72px;
         line-height: 1;
         color: #243f4d;
@@ -34,6 +37,8 @@
 
     &__text {
         max-width: 370px;
+        max-height: 400px;
+        overflow: hidden;
         @extend %rubik-400;
         font-size: 18px;
         line-height: 1.7;
@@ -41,11 +46,17 @@
         color: #436372;
     }
 
+    &__image {
+        max-width: 750px;
+        max-height: 300px;
+    }
+
     &__link {
         background-color: #a3bbc8;
         font-size: 15px;
         color: #ffffff;
         padding: 24px 18px 22px 26px;
+        transition-duration: 0.3s;
 
         &::after {
             content: url(../images/arrow-btn.svg);
@@ -77,23 +88,23 @@
                 @extend %rubik-500;
                 color: #243f4d;
                 background-color: #fde3cc;
+                transition-duration: 0.3s;
 
                 &:hover {
                     background-color: $hover;
-                }                
-            }            
+                }
+            }
 
             &.slick-active {
                 button {
                     background-color: #fff;
+                    transition-duration: 0.3s;
 
                     &:hover {
                         background-color: $hover;
                     }
                 }
-            }            
+            }
         }
     }
 }
-
-

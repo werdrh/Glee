@@ -1,5 +1,6 @@
 .video {
     &__inner {
+        padding: 200px 0; 
         text-align: center;
         background-position: center;
         background-repeat: no-repeat;
@@ -7,11 +8,7 @@
         margin-bottom: 102px;
     }
 
-    &__items {
-        padding: 200px 0;       
-    }
-
-    &__item {
+    &__item {        
         &:hover {
             .video__link::after{
             opacity: 1;
@@ -22,11 +19,11 @@
     &__link {
         position: relative;     
         &::after {
-            content: url(../../images/video-btn-bg.svg);
+            content: url(../images/video-btn-bg.svg);
             position: absolute;
             bottom: -15px;
             left: -15px;            
-            transition: all 0.7s; 
+            transition-duration: 0.7s; 
             opacity: 0;                               
         }             
     } 

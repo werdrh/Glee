@@ -2,14 +2,13 @@
 
     &__inner {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #fef7f0;
+        justify-content: space-around;   
     }
 
     &__items {
         display: flex;
         padding: 45px 145px 40px;
+        background-color: #fef7f0;
 
         &:not(:last-child) {
             border-right: 1px solid #e8e4df;

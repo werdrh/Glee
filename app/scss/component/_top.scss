@@ -1,0 +1,39 @@
+.top {
+    padding: 17px 0 30px;
+    background-color: #edf1f4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        font-size: 36px;
+        color: #222933;
+        @extend %rubik-300;
+        text-align: center;
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.3s;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        font-size: 14px;
+        color: #888c91;
+        @extend %rubik-400;
+        &:not(:last-child)::after {
+            content: "/";
+            padding: 0 6px;
+        }
+    }
+
+    &__item a:hover {
+        color: $hover;
+    }
+}

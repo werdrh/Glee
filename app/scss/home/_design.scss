@@ -2,33 +2,14 @@
     padding: 23px 0 120px;
 
     &__inner {
+        padding-top: 75px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px 30px;
+        grid-gap: 40px 30px;
     }
 
-    &__item {
-        max-width: 370px;
-        max-height: 246px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
+}
 
-    &__items {
-        padding: 35px 0 130px 35px;
-        @extend %dmsans-700;
-    }
-
-    &__item-title {
-        max-width: 195px;
-        font-size: 20px;
-        line-height: 1.3;
-        margin-bottom: 8px;
-    }
-
-    &__item-category {
-     font-size: 16px;
-     color: #a3bbc8;
-    }
+.design__nav-btn.mixitup-control-active {
+    color: #191919;
 }

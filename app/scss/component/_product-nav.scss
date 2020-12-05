@@ -1,0 +1,20 @@
+.product {
+    &__nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__nav-item {
+        @extend %dmsans-700;
+        color: #8b8b8b;
+        transition-duration: 0.3s;
+
+        &+& {
+            padding-left: 19px;
+        }
+
+        &:hover {
+            color: #191919;
+        }
+    }
+}
