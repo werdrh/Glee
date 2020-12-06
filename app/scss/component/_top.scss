@@ -4,12 +4,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 115px;
 
     &__title {
         font-size: 36px;
         color: #222933;
         @extend %rubik-300;
         text-align: center;
+        margin-bottom: 3px;
     }
 }
 
@@ -27,6 +29,7 @@
         font-size: 14px;
         color: #888c91;
         @extend %rubik-400;
+
         &:not(:last-child)::after {
             content: "/";
             padding: 0 6px;

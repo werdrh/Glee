@@ -30,7 +30,7 @@ main {
 .title {
     margin-bottom: 17px;
     text-align: center;
-    @extend%dmsans-700;
+    @extend %dmsans-700;
     font-size: 36px;
     color: $title
 }
@@ -45,4 +45,32 @@ input {
 .logo__img {
     max-width: 146px;
     max-height: 39px;
+}
+
+.filter {
+    max-width: 270px;
+    margin-bottom: 60px;
+
+}
+
+.filter-title {
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #243f4d;
+    @extend %dmsans-700;
+    position: relative;
+    margin-bottom: 28px;
+
+    &::after {
+        content: " ";
+        background-image: url(../images/icon/filter-title-line.svg);
+        margin-left: 15px;
+        width: 38px;
+        height: 2px;
+        position: absolute;
+        top: 12px;
+        
+    }
+
 }
