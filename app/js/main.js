@@ -1,5 +1,9 @@
 $(function () {
 
+  $(".star").rateYo({
+    readOnly: true    
+  });
+
   $(".filter-price__input").ionRangeSlider({
     step: 0.01,
     onStart: function (data){      
@@ -32,9 +36,7 @@ $(function () {
     }
   });
 
-  $(".star").rateYo({
-    starWidth: "40px"
-  });
+ 
 
   
 });

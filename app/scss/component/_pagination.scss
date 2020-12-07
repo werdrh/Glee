@@ -1,0 +1,40 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 135px;
+    font-size: 16px;
+    @extend %rubik-400;
+    transform: translateX(14%);
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 15px;
+
+        &--last {
+            display: none;
+        }
+
+        &--active {
+            .pagination__link {
+                background-color: $hover;
+                color: #fff;
+            }
+        }
+
+    }
+
+    &__link {
+        padding: 15px 20px;
+        border: 1px solid $hover;
+        transition-duration: 0.3s;
+        color: #243f4d;
+
+        &:hover {
+            background-color: $hover;
+        }
+    }
+
+}

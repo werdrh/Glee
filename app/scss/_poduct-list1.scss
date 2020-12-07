@@ -1,0 +1,23 @@
+.recent__items {
+    margin-top: 28px;
+}
+
+.shop {
+    &__filters {
+        max-width: 270px;
+        width: 100%;
+        margin-right: 30px;
+    }
+
+    &__inner {
+        display: flex;
+        margin-bottom: 123px;
+    }
+
+    &__content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px 30px;
+    }
+}
