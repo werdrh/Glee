@@ -97,23 +97,85 @@
             <div class="container">
                 <div class="shop__inner">
                     <div class="shop__filters">
-                        <div class="filter-category filter">
+                        <div class="filter-category ">
                             <h2 class="filter-title">
                                 CATEGORY
                             </h2>
                             <form class="filter-category__form" action="#">
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__item">
+                                        <span class="filter-category__text">
+                                            Chair
+                                        </span>
+                                        <svg class="filter-category__icon">
+                                            <use xlink:href="images/sprite.svg#filter-shape">
+                                                <use>
+                                        </svg>
+                                    </div>
+                                </label>
 
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__item">
+                                        <span class="filter-category__text">
+                                            Table
+                                        </span>
+                                        <svg class="filter-category__icon">
+                                            <use xlink:href="images/sprite.svg#filter-shape">
+                                                <use>
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__item">
+                                        <span class="filter-category__text">
+                                            Lamp
+                                        </span>
+                                        <svg class="filter-category__icon">
+                                            <use xlink:href="images/sprite.svg#filter-shape">
+                                                <use>
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__item">
+                                        <span class="filter-category__text">
+                                            Watch
+                                        </span>
+                                        <svg class="filter-category__icon">
+                                            <use xlink:href="images/sprite.svg#filter-shape">
+                                                <use>
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__item">
+                                        <span class="filter-category__text">
+                                            Chair
+                                        </span>
+                                        <svg class="filter-category__icon">
+                                            <use xlink:href="images/sprite.svg#filter-shape">
+                                                <use>
+                                        </svg>
+                                    </div>
+                                </label>
                             </form>
                         </div>
 
-                        <div class="filter-price filter">
+                        <div class="filter-price ">
                             <h2 class="filter-title">
                                 PRICE
                             </h2>
                             <form class="filter-price__form" action="#">
                                 <input type="text" class="filter-price__input" data-type="double" data-min="0.00"
-                                    data-max="1000.00" data-from="100.01" data-to="500.01" data-grid="true"
-                                    />
+                                    data-max="1000.00" data-from="100.01" data-to="500.01" data-grid="true" />
                                 <div class="filter-price__num">
                                     <span class="filter-price__from"></span>
                                     <span class="filter-price__to"></span>
@@ -122,22 +184,97 @@
                             </form>
                         </div>
 
-                        <div class="filter-brand filter">
+                        <div class="filter-brand ">
                             <h2 class="filter-title">
                                 BRAND
                             </h2>
-                            <form class="filter-category__form" action="#">
+                            <form class="filter-brand__form" action="#">
+                                <label class="filter-brand__label">
+                                    <input class="filter-brand__input" type="checkbox">
+                                    <div class="filter-brand__item">
+                                        <span class="filter-brand__text">
+                                            RFL
+                                        </span>
+                                        <span class="filter-brand__amount">
+                                            (10)
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="filter-brand__label">
+                                    <input class="filter-brand__input" type="checkbox">
+                                    <div class="filter-brand__item">
+                                        <span class="filter-brand__text">
+                                            Brothers
+                                        </span>
+                                        <span class="filter-brand__amount">
+                                            (21)
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="filter-brand__label">
+                                    <input class="filter-brand__input" type="checkbox">
+                                    <div class="filter-brand__item">
+                                        <span class="filter-brand__text">
+                                            Regal
+                                        </span>
+                                        <span class="filter-brand__amount">
+                                            (3)
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="filter-brand__label">
+                                    <input class="filter-brand__input" type="checkbox">
+                                    <div class="filter-brand__item">
+                                        <span class="filter-brand__text">
+                                            Nadia
+                                        </span>
+                                        <span class="filter-brand__amount">
+                                            (14)
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="filter-brand__label">
+                                    <input class="filter-brand__input" type="checkbox">
+                                    <div class="filter-brand__item">
+                                        <span class="filter-brand__text">
+                                            Otobi
+                                        </span>
+                                        <span class="filter-brand__amount">
+                                            (6)
+                                        </span>
+                                    </div>
+                                </label>
+
+
 
                             </form>
                         </div>
 
-                        <div class="filter-recent filter">
+                        <div class="recent">
                             <h2 class="filter-title">
                                 RECENT PRODUCTS
                             </h2>
-                            <form class="filter-category__form" action="#">
+                            <div class="recent__items">
+                                <article class="product-card4">
+                                    <img src="images/products/6.jpg" alt="product">
+                                    <div class="product-card4__content">
+                                        <h3 class="product-card4__name">
+                                            Pendant lamp
+                                        </h3>
+                                        <div class="star" data-rateyo-rating="4" data-rateyo-star-width="18px">
 
-                            </form>
+                                        </div>
+                                        <span class="product-card4__price">
+                                            <span>23</span>$
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
                         </div>
                     </div>
                     <div class="shop__content">
@@ -146,6 +283,7 @@
                 </div>
             </div>
         </section>
+
 
         <div class="partners">
             <div class="container">
@@ -168,8 +306,6 @@
                 </ul>
             </div>
         </div>
-        </div>
-        </section>
 
     </main>
 

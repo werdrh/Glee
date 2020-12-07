@@ -9,7 +9,7 @@ $(function () {
     onChange: function (data) {
       $('.filter-price__from').text(data.from);
       $('.filter-price__to').text(data.to);
-    },
+    }
     
   });
   
@@ -30,6 +30,10 @@ $(function () {
     selectors: {
       control: '.design__nav-btn'
     }
+  });
+
+  $(".star").rateYo({
+    starWidth: "40px"
   });
 
   

@@ -32,6 +32,13 @@
 }
 
 .filter-price {
+    max-width: 270px;
+    margin-bottom: 77px;
+
+    &__form {
+        margin-top: 28px;
+    }
+
     &__num {
         padding: 0 10px 0 5px;
         color: #243f4d;

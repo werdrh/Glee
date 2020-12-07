@@ -1,0 +1,42 @@
+.filter-category,
+.filter-brand {
+    max-width: 270px;
+    margin-bottom: 52px;
+    &__label {        
+        cursor: pointer;       
+    }
+    &__input {        
+        @extend %checkbox-hiden;
+        &:checked+.filter-category__item{
+            background-color: #edf1f4;
+            border-radius: 4px;
+        }
+        &:checked+.filter-brand__item{
+            background-color: #edf1f4;
+            border-radius: 4px;
+            .filter-brand__amount {
+                color: #243f4d;
+            }
+        }
+    }
+    &__item {
+        @extend %rubik-400;
+        padding: 12px 22px 7px 15px;
+        background-color: #fff;
+        color: #243f4d;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        margin-bottom: 1px;        
+    }
+    &__icon {
+        display: block;
+        max-width: 5px;
+        max-height: 10px;
+    }
+
+    &__amount {
+        color: #b3b3b3;
+    }
+}
+

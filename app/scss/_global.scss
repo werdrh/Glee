@@ -47,11 +47,6 @@ input {
     max-height: 39px;
 }
 
-.filter {
-    max-width: 270px;
-    margin-bottom: 60px;
-
-}
 
 .filter-title {
     text-transform: uppercase;
@@ -60,7 +55,7 @@ input {
     color: #243f4d;
     @extend %dmsans-700;
     position: relative;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
 
     &::after {
         content: " ";
