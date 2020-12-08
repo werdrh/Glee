@@ -13,11 +13,14 @@
         display: flex;
     }
 
-    &__content {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 40px 30px;
-        margin-bottom: 123px;
+    &__content2-item {
+        margin-bottom: 83px;
+        &:not(:last-child){
+            margin-bottom: 44px;
+        }
     }
+}
+
+.pagination--list2 {
+    transform: translateX(-12%);
 }

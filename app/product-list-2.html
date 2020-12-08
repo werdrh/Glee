@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee | Product list 2</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-big">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.png" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Home +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Services</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Page +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">News</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="user-nav">
+                    <button class="user-nav__search" type="button">
+                        <svg class="user-nav__img">
+                            <use xlink:href="images/sprite.svg#search">
+                                <use>
+                        </svg>
+                    </button>
+                    <div class="user-nav__block">
+                        <a class="user-nav__item" href="#">
+                            <svg class="user-nav__img">
+                                <use xlink:href="images/sprite.svg#heard">
+                                    <use>
+                            </svg>
+                            <span class="user-nav__num">0</span>
+                        </a>
+                        <a class="user-nav__item" href="#">
+                            <svg class="user-nav__img">
+                                <use xlink:href="images/sprite.svg#shape">
+                                    <use>
+                            </svg>
+                            <span class="user-nav__num">0</span>
+                        </a>
+                    </div>
+                    <button class="user-nav__button" type="button"> <svg class="user-nav__img">
+                            <use xlink:href="images/sprite.svg#button">
+                                <use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="top">
+            <h2 class="top__title">
+                Product list 2
+            </h2>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">
+                            Product list 2
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="shop">
+            <div class="container">
+                <div class="shop__inner">
+                    <div class="shop__filters">
+                        <div class="filter-category ">
+                            <h2 class="filter-title">
+                                CATEGORY
+                            </h2>
+                            <form class="filter-category__form" action="#">
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__item">
+                                        <span class="filter-category__text">
+                                            Chair
+                                        </span>
+                                        <svg class="filter-category__icon">
+                                            <use xlink:href="images/sprite.svg#filter-shape">
+                                                <use>
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__item">
+                                        <span class="filter-category__text">
+                                            Table
+                                        </span>
+                                        <svg class="filter-category__icon">
+                                            <use xlink:href="images/sprite.svg#filter-shape">
+                                                <use>
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__item">
+                                        <span class="filter-category__text">
+                                            Lamp
+                                        </span>
+                                        <svg class="filter-category__icon">
+                                            <use xlink:href="images/sprite.svg#filter-shape">
+                                                <use>
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__item">
+                                        <span class="filter-category__text">
+                                            Watch
+                                        </span>
+                                        <svg class="filter-category__icon">
+                                            <use xlink:href="images/sprite.svg#filter-shape">
+                                                <use>
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__item">
+                                        <span class="filter-category__text">
+                                            Chair
+                                        </span>
+                                        <svg class="filter-category__icon">
+                                            <use xlink:href="images/sprite.svg#filter-shape">
+                                                <use>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter-price ">
+                            <h2 class="filter-title">
+                                PRICE
+                            </h2>
+                            <form class="filter-price__form" action="#">
+                                <input type="text" class="filter-price__input" data-type="double" data-min="0.00"
+                                    data-max="1000.00" data-from="100.01" data-to="500.01" data-grid="true" />
+                                <div class="filter-price__num">
+                                    <span class="filter-price__from"></span>
+                                    <span class="filter-price__to"></span>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div class="filter-brand ">
+                            <h2 class="filter-title">
+                                BRAND
+                            </h2>
+                            <form class="filter-brand__form" action="#">
+                                <label class="filter-brand__label">
+                                    <input class="filter-brand__input" type="checkbox">
+                                    <div class="filter-brand__item">
+                                        <span class="filter-brand__text">
+                                            RFL
+                                        </span>
+                                        <span class="filter-brand__amount">
+                                            (10)
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="filter-brand__label">
+                                    <input class="filter-brand__input" type="checkbox">
+                                    <div class="filter-brand__item">
+                                        <span class="filter-brand__text">
+                                            Brothers
+                                        </span>
+                                        <span class="filter-brand__amount">
+                                            (21)
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="filter-brand__label">
+                                    <input class="filter-brand__input" type="checkbox">
+                                    <div class="filter-brand__item">
+                                        <span class="filter-brand__text">
+                                            Regal
+                                        </span>
+                                        <span class="filter-brand__amount">
+                                            (3)
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="filter-brand__label">
+                                    <input class="filter-brand__input" type="checkbox">
+                                    <div class="filter-brand__item">
+                                        <span class="filter-brand__text">
+                                            Nadia
+                                        </span>
+                                        <span class="filter-brand__amount">
+                                            (14)
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="filter-brand__label">
+                                    <input class="filter-brand__input" type="checkbox">
+                                    <div class="filter-brand__item">
+                                        <span class="filter-brand__text">
+                                            Otobi
+                                        </span>
+                                        <span class="filter-brand__amount">
+                                            (6)
+                                        </span>
+                                    </div>
+                                </label>
+
+
+
+                            </form>
+                        </div>
+
+                        <div class="recent">
+                            <h2 class="filter-title">
+                                RECENT PRODUCTS
+                            </h2>
+                            <div class="recent__items">
+                                <article class="product-card4">
+                                    <a class="product-card4__link" href="#">
+                                        <img class="product-card4__img" src="images/products/6.jpg" alt="product">
+                                        <div class="product-card4__content">
+                                            <h3 class="product-card4__name">
+                                                Pendant lamp
+                                            </h3>
+                                            <div class="star" data-rateyo-rating="4" data-rateyo-star-width="13px">
+
+                                            </div>
+                                            <span class="product-card4__price">
+                                                <span>23</span>$
+                                            </span>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="product-card4">
+                                    <a class="product-card4__link" href="#">
+                                        <img class="product-card4__img" src="images/products/9.jpg" alt="product">
+                                        <div class="product-card4__content">
+                                            <h3 class="product-card4__name">
+                                                Pendant lamp
+                                            </h3>
+                                            <div class="star" data-rateyo-rating="4" data-rateyo-star-width="13px">
+
+                                            </div>
+                                            <span class="product-card4__price">
+                                                <span>23</span>$
+                                            </span>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="product-card4">
+                                    <a class="product-card4__link" href="#">
+                                        <img class="product-card4__img" src="images/products/2.png" alt="product">
+                                        <div class="product-card4__content">
+                                            <h3 class="product-card4__name">
+                                                Pendant lamp
+                                            </h3>
+                                            <div class="star" data-rateyo-rating="4" data-rateyo-star-width="13px">
+
+                                            </div>
+                                            <span class="product-card4__price">
+                                                <span>23</span>$
+                                            </span>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="shop__content2">
+                        <div class="shop__content2-item">
+                            <article class="product-card5">
+                                <a class="product-card5__link" href="#">
+                                    <img class="product-card5__img" src="images/products/10.jpg" alt="product">
+                                </a>
+                                <div class="product-card5__content">
+                                    <a class="product-card5__link-title" href="#">
+                                        <h3 class="product-card5__title">
+                                            Wooden radio
+                                        </h3>
+                                    </a>
+                                    <div class="star product-card5__star" data-rateyo-rating="4"
+                                        data-rateyo-star-width="20px">
+                                    </div>
+                                    <span class="product-card5__price">
+                                        23$
+                                    </span>
+                                    <p class="product-card5__text">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <div class="product-card5__menu">
+                                        <button class="product-card5__btn product-card5__btn--active" type="submit">
+                                            <svg class="product-card5__icon">
+                                                <use xlink:href="images/sprite.svg#shape">
+                                                    <use>
+                                            </svg>
+                                        </button>
+                                        <button class="product-card5__btn" type="submit">
+                                            <svg class="product-card5__icon">
+                                                <use xlink:href="images/sprite.svg#heard">
+                                                    <use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="shop__content2-item">
+                            <article class="product-card5">
+                                <a class="product-card5__link" href="#">
+                                    <img class="product-card5__img" src="images/products/11.jpg" alt="product">
+                                </a>
+                                <div class="product-card5__content">
+                                    <a class="product-card5__link-title" href="#">
+                                        <h3 class="product-card5__title">
+                                            Wooden chair
+                                        </h3>
+                                    </a>
+                                    <div class="star product-card5__star" data-rateyo-rating="4"
+                                        data-rateyo-star-width="20px">
+                                    </div>
+                                    <span class="product-card5__price">
+                                        23$
+                                    </span>
+                                    <p class="product-card5__text">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <div class="product-card5__menu">
+                                        <button class="product-card5__btn product-card5__btn--active" type="submit">
+                                            <svg class="product-card5__icon">
+                                                <use xlink:href="images/sprite.svg#shape">
+                                                    <use>
+                                            </svg>
+                                        </button>
+                                        <button class="product-card5__btn" type="submit">
+                                            <svg class="product-card5__icon">
+                                                <use xlink:href="images/sprite.svg#heard">
+                                                    <use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="shop__content2-item">
+                            <article class="product-card5">
+                                <a class="product-card5__link" href="#">
+                                    <img class="product-card5__img" src="images/products/12.jpg" alt="product">
+                                </a>
+                                <div class="product-card5__content">
+                                    <a class="product-card5__link-title" href="#">
+                                        <h3 class="product-card5__title">
+                                            Pendant lamp
+                                        </h3>
+                                    </a>
+                                    <div class="star product-card5__star" data-rateyo-rating="4"
+                                        data-rateyo-star-width="20px">
+                                    </div>
+                                    <span class="product-card5__price">
+                                        23$
+                                    </span>
+                                    <p class="product-card5__text">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <div class="product-card5__menu">
+                                        <button class="product-card5__btn product-card5__btn--active" type="submit">
+                                            <svg class="product-card5__icon">
+                                                <use xlink:href="images/sprite.svg#shape">
+                                                    <use>
+                                            </svg>
+                                        </button>
+                                        <button class="product-card5__btn" type="submit">
+                                            <svg class="product-card5__icon">
+                                                <use xlink:href="images/sprite.svg#heard">
+                                                    <use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="shop__content2-item">
+                            <article class="product-card5">
+                                <a class="product-card5__link" href="#">
+                                    <img class="product-card5__img" src="images/products/13.jpg" alt="product">
+                                </a>
+                                <div class="product-card5__content">
+                                    <a class="product-card5__link-title" href="#">
+                                        <h3 class="product-card5__title">
+                                            Retro table
+                                        </h3>
+                                    </a>
+                                    <div class="star product-card5__star" data-rateyo-rating="4"
+                                        data-rateyo-star-width="20px">
+                                    </div>
+                                    <span class="product-card5__price">
+                                        23$
+                                    </span>
+                                    <p class="product-card5__text">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <div class="product-card5__menu">
+                                        <button class="product-card5__btn product-card5__btn--active" type="submit">
+                                            <svg class="product-card5__icon">
+                                                <use xlink:href="images/sprite.svg#shape">
+                                                    <use>
+                                            </svg>
+                                        </button>
+                                        <button class="product-card5__btn" type="submit">
+                                            <svg class="product-card5__icon">
+                                                <use xlink:href="images/sprite.svg#heard">
+                                                    <use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination pagination--list2 ">
+                    <ul class="pagination__list">
+                        <li class="pagination__item pagination__item--last">
+                            <a class="pagination__link" href="#">
+                                Previous
+                            </a>
+                        </li>
+                        <li class="pagination__item pagination__item--active">
+                            <a class="pagination__link" href="#">
+                                1
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">
+                                2
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">
+                                3
+                            </a>
+                        </li>
+
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">
+                                Next
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="partners">
+            <div class="container">
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <img src="images/partners/1.png" alt="partners">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/2.png" alt="partners">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/3.png" alt="partners">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/4.png" alt="partners">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/5.png" alt="partners">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__contact">
+                    <a class="logo footer__logo " href="#">
+                        <img class="logo__img" src="images/logo.png" alt="logo">
+
+                    </a>
+                    <address class="footer__address">
+                        <a class="footer__address-link" href="#">
+                            <span class="footer__address-text">Address:</span> 4772 Wines Lane
+                            Houston, TX 77032
+                        </a>
+                        <a class="footer__address-link" href="tel:+8323475843">
+                            <span class="footer__address-text">Telephone:</span> +832-347-5843
+                        </a>
+                        <a class="footer__address-link" href="mailto:contact@Glee.com">
+                            <span class="footer__address-text">Email:</span> contact@Glee.com
+                        </a>
+                    </address>
+                </div>
+                <div class="footer__servises">
+                    <div class="footer__title">
+                        Services
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                About us
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Return Policy
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Our Blog
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Terms & Condition
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__account">
+                    <div class="footer__title">
+                        Account
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Your Account
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Checkout
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Login
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Register
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <label for="input-email">
+                        <div class="footer__title">
+                            newsletter
+                        </div>
+                        <p class="footer__text">
+                            Subscribe by our newsletter and get
+                            update protidin.
+                        </p>
+                    </label>
+                    <form class="footer__form" action="#">
+                        <input id="input-email" class="footer__input" name="subscribe[email]" type="email"
+                            placeholder="Email address" required>
+                        <button class="footer__btn" type="submit">Subscribe</button>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    ©2020 CopyRight Example. All rights reserved.
+                </p>
+                <ul class="footer__nav">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+
+
+</body>
+
+</html>
