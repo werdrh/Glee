@@ -7,6 +7,8 @@
 @import 'component/header';
 @import 'component/footer';
 @import 'component/top';
+@import 'component/blog-item';
+@import 'component/recent-post';
 @import 'component/product-nav';
 @import 'component/product-card';
 @import 'component/product-card2';
@@ -18,6 +20,7 @@
 @import 'component/pagination';
 @import 'component/filter/filter-price';
 @import 'component/filter/filter-category';
+@import 'component/filter/search';
 @import 'home/top-slider';
 @import 'home/services';
 @import 'home/products';
@@ -33,7 +36,16 @@
 
 
 
+.pagination-blog {
+    justify-content: start;
+    transform: translateX(0);
+    padding-top: 35px;
+}
 
+.blog__inner {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
