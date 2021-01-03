@@ -1,0 +1,162 @@
+.contact {
+    text-align: center;
+
+    &__sub {
+        @extend %dmsans-700;
+        font-size: 16px;
+        color: #a3bbc8;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 35px;
+        color: #436372;
+        margin-bottom: 70px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 115px;
+    }
+
+    &__top-item {
+        max-width: 370px;
+        max-height: 380px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fbfbfb;
+        padding: 35px 50px;
+    }
+
+    &__top-img {
+        width: 194px;
+        height: 194px;
+        object-fit: cover;
+    }
+
+    &__top-title {
+        font-size: 20px;
+        color: #222222;
+        @extend %dmsans-700;
+        margin-bottom: 20px;
+    }
+
+    &__top-text {
+        font-size: 16px;
+        color: #565872;
+        @extend %rubik-400;
+        line-height: 2;
+    }
+
+    &__top-mail {
+        display: block;
+    }
+
+   
+
+    &__bootom {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 130px;
+    }
+
+    &__form {
+        max-width: 622px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__map {
+        max-width: 500px;
+        max-height: 338px;
+    }
+
+    &__label-name,
+    &__label-email,
+    &__label-area {
+        margin-bottom: 25px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 18px;
+            height: 15px;
+            background-repeat: no-repeat;
+            right: 29px;
+            top: 17px;
+            background-image: url(../images/icon/form-icon1.svg);
+        }
+    }
+
+    &__input-name,
+    &__input-email,
+    &__input-area {
+        padding-left: 22px;
+        padding: 15px 47px 15px 22px;
+        border: none;
+        background-color: #fafafa;
+        &::placeholder {
+            font-size: 16px;
+            @extend %rubik-400;
+            color: #565872;
+            text-transform: uppercase;
+
+        }
+
+    }
+
+    &__label-name {
+        &::after{
+            background-image: url(../images/icon/form-icon1.svg);
+            right: 40px;
+        }
+    }
+
+    &__label-email {
+        &::after{
+            background-image: url(../images/icon/form-icon2.svg);
+        }
+    }
+
+    &__label-area {
+        &::after{
+            background-image: url(../images/icon/form-icon3.svg);
+        }
+    }
+
+
+    &__input-name {
+        width: 300px;
+        height: 47px;
+        margin-right: 20px;
+        margin-bottom: 25px;
+    }
+
+    &__input-email {
+        width: 300px;
+        height: 47px;
+    }
+
+    &__input-area {
+        width: 620px;
+        height: 180px;
+        resize: none;
+
+    }
+
+    &__btn {
+        font-size: 15px;
+        @extend %dmsans-700;
+        color: #fff;
+        background-color: #a3bbc8;
+        padding: 18px 43px;
+        border-radius: 6px;
+    }
+}
